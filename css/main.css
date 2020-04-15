@@ -309,6 +309,17 @@ body {
   background-color: #dde2f3;
 }
 
+.attribution {
+  color: grey;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: green;
+}
+
 @media (max-width: 440px) {
   html {
     font-size: 50%;
