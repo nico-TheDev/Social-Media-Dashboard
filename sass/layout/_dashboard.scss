@@ -7,6 +7,7 @@
 .dashboard{
     color: white;
     font-size: 1.5rem;
+    transition: all 400ms;
 
     &__head{
         display: flex;
@@ -36,6 +37,7 @@
         margin-left: 5px;
         border-radius: 3rem;
         position: relative;
+        transition: all 400ms;
 
         &::after{
             content: "";
@@ -45,7 +47,7 @@
             border-radius: 50%;
             position: absolute;
             top: 3px;
-            left: 2px;
+            left: 5px;
             transition: all 300ms linear;
         }
     }
@@ -55,9 +57,9 @@
         opacity: 0;
     }
 
-    // .checkbox:checked + .switch-container::after{
-    //     transform: translateX(20px);
-    // }
+     .checkbox:checked + .switch-container::after{
+       transform: translateX(15px);
+     }
 
 
 

@@ -1,4 +1,4 @@
-.main--light{
+.light{
     background-color: $light-bg;
 
     &::before{
@@ -8,36 +8,34 @@
 
 }
 
-.light-text{
+.light-card-text{
     color: $light-card-text;
 }
 
-.dashboard--light,
-.overview--light
+.light-text
 {
     color: black;
 }
 
-.card--light,
-.overview__card--light
+.light-card
 {
     background-color: $light-card;
+    transition: all 300ms;
+    &:hover{
+        cursor: pointer;
+        background-color: darken($light-card, 5%);
+    }
+    
 }
 
-.switch-container--light{
-    background: $toggle-light !important;
+.light-switch{
+    // background: $toggle-light !important;
     &::after{
         background-color: $light-bg !important;
-        transform: translateX(20px);
+        // transform: translateX(20px);
     }
 }
 
-.main--light .overview__card:hover,
-.main--light .card:hover
-{   
-    cursor: pointer;
-    background-color: darken($light-card, 5%);
-}
 
 
 .attribution{
